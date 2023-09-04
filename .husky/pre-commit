@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+. "$(dirname -- "$0")/utils.sh"
+
+print_message "🧪 Run tests"
+npm run test
+
+print_message "🛁 Lint staged files"
+npm run lint:staged
